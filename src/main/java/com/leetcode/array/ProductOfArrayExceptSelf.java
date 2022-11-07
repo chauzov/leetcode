@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class ProductOfArrayExceptSelf {
 
+    // Other solutions: https://www.enjoyalgorithms.com/blog/product-of-array-except-self
     public static void main(String[] args) {
         int[] array1 = new int[]{1,2,3,4};
         // before : {1, 1, 2, 6}

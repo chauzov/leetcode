@@ -19,8 +19,8 @@ public class SeatsDistance {
         int emptySeatsNum = 0;
         int startPos = 0;
 
-        for (int i = 0; i < seats.length; i++) {
-            if (seats[i] == 0)
+        for (int seat : seats) {
+            if (seat == 0)
                 emptySeatsNum++;
             else {
                 if (startPos == 0) {
@@ -29,7 +29,7 @@ public class SeatsDistance {
                     distance = Math.max(distance, (emptySeatsNum / 2) + (emptySeatsNum % 2));
                 }
                 emptySeatsNum = 0;
-                startPos = seats[i];
+                startPos = seat;
             }
         }
         distance = Math.max(distance, emptySeatsNum);
